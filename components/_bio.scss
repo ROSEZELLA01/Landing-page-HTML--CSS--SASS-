@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+$primaryColor: #F5F7FA;
+$mainColor: #4CAF4F;
+$headingColor: #4D4D4D;
+$textColor: #717171;
+$myFont: "Inter", sans-serif;
+
+
+.bio{
+    // height: 433px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:48px;
+    padding: 80px 0px;
+
+    .bio-img-frame{
+        height: 433px;
+        width: 442px;
+
+        .bio-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .bio-des{
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        height: 268px;
+
+        .bio-des-h{
+            font-size: 36px;
+            line-height: 44px;
+            font-weight: 600;
+            font-family: $myFont;
+            color: $headingColor;
+        }
+
+        .bio-des-p{
+            font-size: 14px;
+                line-height: 20px;
+                font-weight: 400;
+                font-family: $myFont;
+                color: $textColor;
+        }
+
+        .bio-des-b {
+                    padding: 14px 32px;
+                    margin-top: 16px;
+                    width: 152px;
+                    background-color: $mainColor;
+                    border-radius: 4px;
+                    color: #ffffff;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    font-family: $myFont;
+                    border: none;
+                    margin-top: 32px;
+                    transition: all;
+                    transition-duration: 0.5s;
+                    transition-timing-function: ease-in;
+                }
+        
+                    .bio-des-b:hover {
+                    padding: 14px 32px;
+                    // width: 162px;
+                    transform: scale(0.9);
+                    background-color: darken($mainColor, 35);
+        
+                }
+    }
+}

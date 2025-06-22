@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+$primaryColor: #F5F7FA;
+$mainColor: #4CAF4F;
+$myFont: "Inter", sans-serif;
+
+.clients{
+    height: 270px;
+    padding: 40px auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 40px;
+
+    .client-des{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        h4{
+            font-family: $myFont;
+                color: #4D4D4D;
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 44px;
+                text-align: center;
+        }
+
+        p{
+            font-family: $myFont;
+            color: #717171;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+    .client-img{
+        width: 1153px;
+        height: 98px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+}

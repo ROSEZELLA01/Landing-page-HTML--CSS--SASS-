@@ -1,0 +1,35 @@
+@import "./components/nav";
+@import "./components/hero";
+@import "./components/clients";
+@import "./components/community";
+@import "./components/bio";
+@import "./components/counter";
+@import "./components/customers";
+@import "./components/blogs";
+@import "./components/foot";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+$primaryColor: #F5F7FA;
+$mainColor: #4CAF4F;
+$headingColor: #4D4D4D;
+$textColor: #717171;
+$myFont: "Inter", sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    // padding-bottom: 500px;
+    background-color: #ffffff;
+    
+}
+
+$primaryColor:#F5F7FA;
+$mainColor:#4CAF4F;
+
+

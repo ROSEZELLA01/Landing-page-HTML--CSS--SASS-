@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+$primaryColor: #F5F7FA;
+$mainColor: #4CAF4F;
+$headingColor: #4D4D4D;
+$textColor: #717171;
+$myFont: "Inter", sans-serif;
+
+.blogs{
+   padding: 80px 144px;
+   display:flex;
+   flex-direction: column;
+   gap: 32px;
+   justify-content: center;
+   align-items: center;
+
+   .blogs-des{
+    display: flex;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+
+        .blogs-des-h{
+            font-size: 36px;
+                line-height: 44px;
+                font-weight: 600;
+                font-family: $myFont;
+                color: $headingColor;
+                text-align: center;
+        }
+
+                .blogs-des-p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    font-family: $myFont;
+                    color: $textColor;
+                    width: 628px;
+                    text-align: center;
+                }
+   }
+
+   .blog{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+
+        .blog-post{
+            height: 366px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .blog-img{
+                width: 368px;
+                height: 286px;
+                border-radius: 8px;
+            }
+            .article{
+                height: 176px;
+                width: 317px;
+                background-color: $primaryColor;
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                gap:16px;
+                border-radius: 8px;
+                margin-top: -85px;
+
+                .article-p{
+                    font-size: 20px;
+                        line-height: 28px;
+                        font-weight: 600;
+                        font-family: $myFont;
+                        color: $textColor;
+                        // width: 628px;
+                        text-align: center;
+                }
+
+                                .article-b {
+                                    font-size: 20px;
+                                    line-height: 28px;
+                                    font-weight: 600;
+                                    font-family: $myFont;
+                                    color: $mainColor;
+                                    // width: 628px;
+                                    text-align: center;
+                                    padding: 8px;
+                                    background-color: #4CAF4F00;
+                                    border: none;
+                                }
+
+            }
+        }
+   }
+}

@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+$primaryColor: #f5f7fa;
+$mainColor: #4caf4f;
+$headingColor: #4d4d4d;
+$textColor: #717171;
+$myFont: "Inter", sans-serif;
+
+.counter {
+  height: 288px;
+  padding: 64px 144px;
+  display: flex;
+  flex-direction: row;
+  gap: 72px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primaryColor;
+
+  .counter-heading {
+    width: 540px;
+    .counter-heading-h {
+      font-size: 36px;
+      line-height: 44px;
+      font-weight: 600;
+      font-family: $myFont;
+      color: $headingColor;
+      margin-bottom: 12px;
+
+      .green {
+        color: $mainColor;
+      }
+    }
+
+    .counter-heading-p {
+      color: #18191f;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      font-family: $myFont;
+    }
+  }
+
+  .counter-lists {
+    width: 540px;
+    display: grid;
+    grid-template-columns: 255px 255px;
+    gap: 40px;
+
+    .counter-list {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      justify-content: flex-start;
+      align-items: center;
+
+      .counter-list-img {
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+      }
+
+      .counter-list-des {
+        .counter-list-des-h {
+          color: $headingColor;
+          font-size: 28px;
+          line-height: 36px;
+          font-weight: 700;
+          font-family: $myFont;
+        }
+        .counter-list-des-p {
+          color: $textColor;
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 400;
+          font-family: $myFont;
+        }
+      }
+    }
+  }
+}

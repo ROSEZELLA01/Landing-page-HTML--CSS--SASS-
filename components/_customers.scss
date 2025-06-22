@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+$primaryColor: #F5F7FA;
+$mainColor: #4CAF4F;
+$headingColor: #4D4D4D;
+$textColor: #717171;
+$myFont: "Inter", sans-serif;
+
+.customers{
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    padding: 32px 144px;
+    background-color: $primaryColor;
+
+    .customer-img{
+        width: 326px;
+        height: 326px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow:  0 8px 16px 0 #abbed115;
+        
+    }
+    .customer{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 780px;
+
+        .customer-des{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+
+            .customer-des-p{
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                font-family: $myFont;
+                color: $textColor;
+                text-align: justify;
+            }
+            .customer-des-h{
+                font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    font-family: $myFont;
+                    color: $mainColor;
+            }
+
+        }
+        .partners{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 28px;
+
+            .partners-img{
+                width: 48px;
+                height: 48px;
+                object-fit: contain;
+            }
+            .partners-b{
+                font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    font-family: $myFont;
+                    color: $mainColor;
+                    width: 233px;
+                    padding: 8px;
+                    background-color: #00000000;
+                    border: none;
+            }
+        }
+    }
+}
+
+.CTA{
+    // height: 300px;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: $primaryColor;
+    justify-content: center;
+    align-items: center;
+
+    .CTA-h{
+        font-size: 64px;
+        line-height: 76px;
+        font-family: $myFont;
+        color: $headingColor;
+        width:800px;
+        text-align: center;
+    }
+
+        .CTA-b {
+            padding: 14px 32px;
+            margin-top: 16px;
+            width: 178px;
+            background-color: $mainColor;
+            border-radius: 4px;
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            font-family: $myFont;
+            border: none;
+            margin-top: 32px;
+            transition: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in;
+        }
+    
+        .CTA-b:hover {
+            padding: 14px 32px;
+            // width: 162px;
+            transform: scale(0.9);
+            background-color: darken($mainColor, 35);
+    
+        }
+}
